@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AusTrade Hub | 澳通商汇 - Australia ASEAN China Trade Portal</title>
+    <meta name="description" content="全球前30大外贸商品 | Australia-ASEAN-China top 30 trade commodities portal">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🦘</span>
+                <div class="brand-text">
+                    <span class="brand-en">AusTrade Hub</span>
+                    <span class="brand-zh">澳通商汇</span>
+                </div>
+            </div>
+            <div class="nav-controls">
+                <button class="lang-toggle" id="langToggle" title="切换语言/Switch Language">
+                    <span class="lang-label">中/EN</span>
+                </button>
+                <div class="nav-links">
+                    <a href="#commodities" data-en="Top 30" data-zh="商品排行">Top 30</a>
+                    <a href="#city-pick" data-en="City Picks" data-zh="城市精选">City Picks</a>
+                    <a href="#routes" data-en="Trade Routes" data-zh="贸易线路">Trade Routes</a>
+                    <a href="#price-ticker" data-en="Price Ticker" data-zh="价格行情">Price Ticker</a>
+                    <a href="#key-events" data-en="Events" data-zh="大事记">Events</a>
+                    <a href="#policy" data-en="Policy" data-zh="政策速递">Policy</a>
+                    <a href="#update" data-en="Updates" data-zh="更新计划">Updates</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                <span data-en="Live Trade Intelligence" data-zh="实时贸易情报">Live Trade Intelligence</span>
+            </div>
+            <h1>
+                <span class="hero-line" data-en="Australia · ASEAN · China" data-zh="澳大利亚 · 东盟 · 中国">Australia · ASEAN · China</span>
+                <span class="hero-line hero-highlight" data-en="Top 30 Global Trade Commodities" data-zh="全球前30大外贸商品">Top 30 Global Trade Commodities</span>
+            </h1>
+            <p class="hero-sub" data-en="Cross-border trade intelligence for the Indo-Pacific corridor — tailored for Chongqing, Shanghai, Guangdong & Beijing traders" data-zh="印太走廊跨境贸易情报平台 — 为重庆、上海、广东、北京外贸人量身定制">Cross-border trade intelligence for the Indo-Pacific corridor — tailored for Chongqing, Shanghai, Guangdong & Beijing traders</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">30</span>
+                    <span class="stat-label" data-en="Top Commodities" data-zh="热门商品">Top Commodities</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">4</span>
+                    <span class="stat-label" data-en="City Hubs" data-zh="城市枢纽">City Hubs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">15+</span>
+                    <span class="stat-label" data-en="Countries" data-zh="覆盖国家">Countries</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">5</span>
+                    <span class="stat-label" data-en="FTA Frameworks" data-zh="自贸协定">FTA Frameworks</span>
+                </div>
+            </div>
+            <div class="hero-cities">
+                <div class="city-pills">
+                    <span class="city-pill active" data-city="chongqing">🏙️ 重庆</span>
+                    <span class="city-pill" data-city="shanghai">🌆 上海</span>
+                    <span class="city-pill" data-city="guangdong">🏭 广东</span>
+                    <span class="city-pill" data-city="beijing">🏛️ 北京</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ticker Bar -->
+    <div class="ticker-bar" id="tickerBar">
+        <div class="ticker-content" id="tickerContent">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <!-- Commodities Section -->
+    <section class="commodities" id="commodities">
+        <div class="section-header">
+            <h2 data-en="Top 30 Trade Commodities" data-zh="全球前30大外贸商品">Top 30 Trade Commodities</h2>
+            <p data-en="Ranked by trade volume across Australia-ASEAN-China corridor" data-zh="按澳大利亚-东盟-中国走廊贸易额排名">Ranked by trade volume across Australia-ASEAN-China corridor</p>
+            <div class="filter-bar">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search commodity / HS code..." data-en-placeholder="Search commodity / HS code..." data-zh-placeholder="搜索商品/HS编码...">
+                </div>
+                <button class="filter-btn active" data-filter="all" data-en="All 30" data-zh="全部30项">All 30</button>
+                <button class="filter-btn" data-filter="minerals" data-en="⛏️ Minerals & Energy" data-zh="⛏️ 矿产能源">⛏️ Minerals & Energy</button>
+                <button class="filter-btn" data-filter="agri" data-en="🌾 Agriculture" data-zh="🌾 农产品">🌾 Agriculture</button>
+                <button class="filter-btn" data-filter="manufacturing" data-en="🏭 Manufacturing" data-zh="🏭 制造业">🏭 Manufacturing</button>
+                <button class="filter-btn" data-filter="tech" data-en="💻 Tech & Electronics" data-zh="💻 科技电子">💻 Tech & Electronics</button>
+                <button class="filter-btn" data-filter="services" data-en="🎓 Services" data-zh="🎓 服务贸易">🎓 Services</button>
+            </div>
+        </div>
+        <div class="commodity-grid" id="commodityGrid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- City-Picked Section: 每个城市的专属推荐 -->
+    <section class="city-pick" id="city-pick">
+        <div class="section-header">
+            <h2 data-en="City-Picked: Your Best Bets" data-zh="城市精选：你的最佳选择">City-Picked: Your Best Bets</h2>
+            <p data-en="What should YOU trade? Depends where you are." data-zh="你该做什么外贸？取决于你在哪个城市。">What should YOU trade? Depends where you are.</p>
+        </div>
+        <div class="city-tabs">
+            <button class="city-tab active" data-city="chongqing">🏙️<span data-en="Chongqing" data-zh="重庆">Chongqing</span></button>
+            <button class="city-tab" data-city="shanghai">🌆<span data-en="Shanghai" data-zh="上海">Shanghai</span></button>
+            <button class="city-tab" data-city="guangdong">🏭<span data-en="Guangdong" data-zh="广东">Guangdong</span></button>
+            <button class="city-tab" data-city="beijing">🏛️<span data-en="Beijing" data-zh="北京">Beijing</span></button>
+        </div>
+        <div class="city-content" id="cityContent">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- Price Ticker Section -->
+    <section class="price-ticker" id="price-ticker">
+        <div class="section-header">
+            <h2 data-en="Key Commodity Prices" data-zh="核心商品价格行情">Key Commodity Prices</h2>
+            <p data-en="Benchmark prices updated weekly" data-zh="基准价格每周更新">Benchmark prices updated weekly</p>
+        </div>
+        <div class="price-grid" id="priceGrid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- Trade Routes Section -->
+    <section class="regions" id="routes">
+        <div class="section-header">
+            <h2 data-en="Trade Routes & Corridors" data-zh="贸易线路与走廊">Trade Routes & Corridors</h2>
+            <p data-en="Key bilateral and multilateral trade channels" data-zh="关键双边与多边贸易通道">Key bilateral and multilateral trade channels</p>
+        </div>
+        <div class="route-cards">
+            <div class="route-card route-auchn">
+                <div class="route-flag">🇦🇺 ↔ 🇨🇳</div>
+                <h3 data-en="Australia ↔ China" data-zh="澳大利亚 ↔ 中国">Australia ↔ China</h3>
+                <div class="route-value">¥1.50万亿 / ~USD 210B</div>
+                <div class="route-detail">
+                    <div class="route-flow">
+                        <span class="flow-label" data-en="AU exports →" data-zh="澳方出口→">AU exports →</span>
+                        <span data-en="Iron ore, Coal, LNG, Beef, Wine, Lobster, Dairy, Lithium, Gold, Education" data-zh="铁矿石、煤炭、LNG、牛肉、葡萄酒、龙虾、乳制品、锂矿、黄金、教育">Iron ore, Coal, LNG, Beef, Wine, Lobster, Dairy, Lithium, Gold, Education</span>
+                    </div>
+                    <div class="route-flow">
+                        <span class="flow-label" data-en="CN exports →" data-zh="中方出口→">CN exports →</span>
+                        <span data-en="Electronics, Machinery, EVs, Textiles, Steel, Telecom, Solar, Furniture, Chemicals" data-zh="电子产品、机械设备、新能源车、纺织品、钢材、通信、光伏、家具、化工">Electronics, Machinery, EVs, Textiles, Steel, Telecom, Solar, Furniture, Chemicals</span>
+                    </div>
+                </div>
+                <div class="route-tags">
+                    <span class="route-tag">ChAFTA</span>
+                    <span class="route-tag">RCEP</span>
+                    <span class="route-tag" data-en="Tariff: 0-5%" data-zh="关税：0-5%">Tariff: 0-5%</span>
+                </div>
+            </div>
+            <div class="route-card route-aseanchn">
+                <div class="route-flag">🇦🇸🇪🇦🇳 ↔ 🇨🇳</div>
+                <h3 data-en="ASEAN ↔ China" data-zh="东盟 ↔ 中国">ASEAN ↔ China</h3>
+                <div class="route-value">¥6.99万亿 / ~USD 980B</div>
+                <div class="route-detail">
+                    <div class="route-flow">
+                        <span class="flow-label" data-en="ASEAN exports →" data-zh="东盟出口→">ASEAN exports →</span>
+                        <span data-en="Palm oil, Rubber, Electronics (Vietnam), Rice, Seafood, Oil & Gas, Timber" data-zh="棕榈油、橡胶、电子产品（越南）、大米、海产品、油气、木材">Palm oil, Rubber, Electronics (Vietnam), Rice, Seafood, Oil & Gas, Timber</span>
+                    </div>
+                    <div class="route-flow">
+                        <span class="flow-label" data-en="CN exports →" data-zh="中方出口→">CN exports →</span>
+                        <span data-en="Machinery, Steel, Vehicles, Electronics, Chemicals, Textiles, Construction" data-zh="机械设备、钢材、车辆、电子产品、化工、纺织品、建材">Machinery, Steel, Vehicles, Electronics, Chemicals, Textiles, Construction</span>
+                    </div>
+                </div>
+                <div class="route-tags">
+                    <span class="route-tag">ACFTA</span>
+                    <span class="route-tag">RCEP</span>
+                    <span class="route-tag" data-en="0% tariff on 90%+ goods" data-zh="90%+商品零关税">0% tariff on 90%+ goods</span>
+                </div>
+            </div>
+            <div class="route-card route-auasean">
+                <div class="route-flag">🇦🇺 ↔ 🇦🇸🇪🇦🇳</div>
+                <h3 data-en="Australia ↔ ASEAN" data-zh="澳大利亚 ↔ 东盟">Australia ↔ ASEAN</h3>
+                <div class="route-value">~USD 150B</div>
+                <div class="route-detail">
+                    <div class="route-flow">
+                        <span class="flow-label" data-en="AU exports →" data-zh="澳方出口→">AU exports →</span>
+                        <span data-en="Coal, Wheat, Education, Beef, Dairy, Wine, Crude oil" data-zh="煤炭、小麦、教育服务、牛肉、乳制品、葡萄酒、原油">Coal, Wheat, Education, Beef, Dairy, Wine, Crude oil</span>
+                    </div>
+                    <div class="route-flow">
+                        <span class="flow-label" data-en="ASEAN exports →" data-zh="东盟出口→">ASEAN exports →</span>
+                        <span data-en="Oil, Electronics, Furniture, Rubber, Seafood, Palm oil" data-zh="石油、电子产品、家具、橡胶、海产品、棕榈油">Oil, Electronics, Furniture, Rubber, Seafood, Palm oil</span>
+                    </div>
+                </div>
+                <div class="route-tags">
+                    <span class="route-tag">AANZFTA</span>
+                    <span class="route-tag">RCEP</span>
+                </div>
+            </div>
+            <div class="route-card route-rcep">
+                <div class="route-flag">🌏</div>
+                <h3 data-en="RCEP Super Corridor" data-zh="RCEP超级走廊">RCEP Super Corridor</h3>
+                <div class="route-value">15 nations · 30% global GDP</div>
+                <div class="route-detail">
+                    <div class="route-flow">
+                        <span class="flow-label" data-en="Members" data-zh="成员">Members</span>
+                        <span data-en="China, Japan, Korea, Australia, NZ + 10 ASEAN nations" data-zh="中国、日本、韩国、澳大利亚、新西兰 + 东盟10国">China, Japan, Korea, Australia, NZ + 10 ASEAN nations</span>
+                    </div>
+                    <div class="route-flow">
+                        <span class="flow-label" data-en="Key benefit" data-zh="核心优势">Key benefit</span>
+                        <span data-en="Cumulative Rules of Origin — parts from any RCEP nation count toward threshold" data-zh="原产地累积规则 — 任何RCEP成员国的零部件均可计入门槛">Cumulative Rules of Origin — parts from any RCEP nation count toward threshold</span>
+                    </div>
+                </div>
+                <div class="route-tags">
+                    <span class="route-tag">RCEP</span>
+                    <span class="route-tag" data-en="Since Jan 2022" data-zh="2022年1月生效">Since Jan 2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Section -->
+    <section class="policy" id="policy">
+        <div class="section-header">
+            <h2 data-en="Policy & FTA Quick Reference" data-zh="政策与自贸协定速查">Policy & FTA Quick Reference</h2>
+            <p data-en="Key frameworks governing AU-ASEAN-CN trade" data-zh="影响澳-东盟-中贸易的核心框架">Key frameworks governing AU-ASEAN-CN trade</p>
+        </div>
+        <div class="policy-grid" id="policyGrid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- Update Section -->
+    <section class="update" id="update">
+        <div class="section-header">
+            <h2 data-en="Weekly Update Schedule" data-zh="每周更新计划">Weekly Update Schedule</h2>
+            <p data-en="Data refreshes every Sunday at 10:30 AM (Beijing Time)" data-zh="每周日上午10:30（北京时间）自动更新">Data refreshes every Sunday at 10:30 AM (Beijing Time)</p>
+        </div>
+        <div class="update-info">
+            <div class="update-card">
+                <div class="update-icon">📅</div>
+                <h4 data-en="Update Cycle" data-zh="更新周期">Update Cycle</h4>
+                <p data-en="Every Sunday 10:30 AM CST" data-zh="每周日 上午10:30 北京时间">Every Sunday 10:30 AM CST</p>
+            </div>
+            <div class="update-card">
+                <div class="update-icon">🔄</div>
+                <h4 data-en="Data Sources" data-zh="数据来源">Data Sources</h4>
+                <p data-en="China Customs, Austrade, ASEAN Stats, UN Comtrade" data-zh="中国海关、澳贸委、东盟统计、联合国商品贸易">China Customs, Austrade, ASEAN Stats, UN Comtrade</p>
+            </div>
+            <div class="update-card">
+                <div class="update-icon">📊</div>
+                <h4 data-en="Coverage" data-zh="覆盖范围">Coverage</h4>
+                <p data-en="Prices, volumes, tariffs, policy changes, new opportunities" data-zh="价格、成交量、关税、政策变动、新机遇">Prices, volumes, tariffs, policy changes, new opportunities</p>
+            </div>
+            <div class="update-card">
+                <div class="update-icon">⏰</div>
+                <h4 data-en="Last Updated" data-zh="上次更新">Last Updated</h4>
+                <p id="lastUpdated">2026-06-19</p>
+            </div>
+        </div>
+        <div class="next-update" id="nextUpdate">
+            <!-- Countdown populated by JS -->
+        </div>
+    </section>
+
+    <!-- Detail Modal -->
+    <div class="detail-modal" id="detailModal">
+        <div class="modal-content" id="detailContent">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <!-- Key Events Section -->
+    <section class="key-events" id="key-events">
+        <div class="section-header">
+            <h2 data-en="Key Trade Events" data-zh="贸易大事记">Key Trade Events</h2>
+            <p data-en="Latest developments affecting AU-ASEAN-CN trade" data-zh="影响澳-东盟-中贸易的最新动态">Latest developments affecting AU-ASEAN-CN trade</p>
+        </div>
+        <div class="key-events-grid" id="keyEventsGrid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span>🦘 AusTrade Hub | 澳通商汇</span>
+            </div>
+            <p data-en="Empowering cross-border trade intelligence across the Indo-Pacific" data-zh="赋能印太走廊跨境贸易情报">Empowering cross-border trade intelligence across the Indo-Pacific</p>
+            <div class="footer-flags">
+                🇦🇺 🇧🇳 🇰🇭 🇮🇩 🇱🇦 🇲🇾 🇲🇲 🇵🇭 🇸🇬 🇹🇭 🇻🇳 🇨🇳
+            </div>
+            <p class="footer-copy">© 2026 AusTrade Hub · RCEP · ChAFTA · AANZFTA · ACFTA · CPTPP</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
