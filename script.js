@@ -706,18 +706,30 @@ const CITY_PICKS = {
     }
 };
 
+// ---- Key Events Feed ----
+const KEY_EVENTS = [
+    { date:"Jun 2026", icon:"🪙", en:"Gold surges to ~$4,089/oz — pullback from Jun peak of $4,713. Central banks accelerating gold purchases amid geopolitical uncertainty.", zh:"金价飙升至~$4,089/盎司——从6月高点$4,713回落。各国央行在地缘不确定性中加速购金。", trend:"up" },
+    { date:"Jun 2026", icon:"🛢️", en:"LNG JKM at $18.45/MMBtu — Iran conflict disrupting Qatar supply routes. AU exports benefiting from supply gap.", zh:"LNG JKM报$18.45/MMBtu——伊朗冲突干扰卡塔尔供应路线。澳出口从供应缺口受益。", trend:"up" },
+    { date:"Jun 18, 2026", icon:"🥩", en:"⚠️ AU beef quota (20.5Kt) exhausted — 100% filled by Jun 18, only 6 months into the year. +55% tariff effective Jun 20.", zh:"⚠️ 澳牛肉配额（20.5Kt）用尽——6月18日达到100%，仅半年用完。6月20日起加征55%关税。", trend:"down" },
+    { date:"Jan-May 2026", icon:"🌏", en:"China-ASEAN trade +16.6% YoY (RMB 3.52T) — ASEAN remains CN's largest trading partner. Vietnam, Malaysia, Indonesia top 3.", zh:"中国-东盟贸易+16.6% YoY（3.52万亿元）——东盟保持中国最大贸易伙伴。越南、马来西亚、印尼前三。", trend:"up" },
+    { date:"Q1 2026", icon:"🇦🇺", en:"AU posts first current account deficit since 2017 — A$27.1B deficit. First trade deficit in 8+ years (A$1.84B in Mar 2026).", zh:"澳出现2017年以来首次经常账户赤字——271亿澳元。8年来首次贸易逆差（2026年3月18.4亿澳元）。", trend:"down" },
+    { date:"2026", icon:"🚗", en:"China vehicle exports: Jan-May 405.9万 units (+63% YoY). Full-year 2026 forecast: 10M+ vehicles (+70%).", zh:"中国汽车出口：前5月405.9万辆（+63% YoY）。2026全年预计：1000万辆+（+70%）。", trend:"up" },
+    { date:"2026", icon:"☀️", en:"Solar panel prices crashed to $0.10-0.12/W — CN overcapacity driving global prices down 50%+ in 3 years.", zh:"光伏面板价格跌至$0.10-0.12/瓦——中国产能过剩推动全球价格3年内下降50%+。", trend:"down" },
+    { date:"Jun 2026", icon:"⛏️", en:"DCE iron ore ~¥747/t ($103/t) — China steel demand still weak. Property sector slowdown continues weighing on prices.", zh:"大商所铁矿石约¥747/吨（$103/吨）——中国钢铁需求仍疲软。地产行业放缓持续施压价格。", trend:"stable" },
+];
+
 // ---- Price Data ----
 const PRICES = [
-    { icon:"⛏️", en:"Iron Ore (62% Fe)", zh:"铁矿石（62%品位）", price:"$103", change:"-5.2%", unit:"USD/ton (DCE ¥747)", up:false },
-    { icon:"🔥", en:"Thermal Coal (Newcastle)", zh:"动力煤（纽卡斯尔）", price:"$128.0", change:"-1.1%", unit:"USD/ton FOB", up:false },
-    { icon:"🛢️", en:"LNG (JKM)", zh:"液化天然气（JKM）", price:"$18.45", change:"+44%", unit:"USD/MMBtu (Iran conflict)", up:true },
-    { icon:"🥩", en:"Beef (FOB Aus)", zh:"牛肉（澳FOB）", price:"$7.20", change:"-40%", unit:"USD/kg (55% tariff from Jun 20)", up:false },
-    { icon:"🌿", en:"Crude Palm Oil", zh:"毛棕榈油", price:"$985", change:"-0.5%", unit:"USD/ton (Rotterdam)", up:false },
-    { icon:"🌳", en:"Rubber (TSR20)", zh:"橡胶（TSR20）", price:"$1.62", change:"+0.8%", unit:"USD/kg (SICOM)", up:true },
-    { icon:"🪙", en:"Gold (XAU)", zh:"黄金", price:"$4,713", change:"+76%", unit:"USD/oz (Iran + rate cuts)", up:true },
-    { icon:"🔋", en:"Lithium Carbonate", zh:"碳酸锂", price:"$10,200", change:"-3.2%", unit:"USD/ton (CN ex-work)", up:false },
-    { icon:"🍷", en:"Wine (Avg FOB)", zh:"葡萄酒（均FOB）", price:"$4.85", change:"+0.6%", unit:"USD/L (AU export avg)", up:true },
-    { icon:"☀️", en:"Solar Panel (Mono PERC)", zh:"光伏面板（单晶PERC）", price:"$0.12", change:"-5.1%", unit:"USD/W (FOB CN)", up:false },
+    { icon:"⛏️", en:"Iron Ore (62% Fe)", zh:"铁矿石（62%品位）", price:"$103", change:"-5.2%", unit:"USD/ton (DCE ¥747, Jun 2026)", up:false },
+    { icon:"🔥", en:"Thermal Coal (Newcastle)", zh:"动力煤（纽卡斯尔）", price:"$128", change:"-1.1%", unit:"USD/ton FOB (Jun 2026)", up:false },
+    { icon:"🛢️", en:"LNG (JKM)", zh:"液化天然气（JKM）", price:"$18.45", change:"+44%", unit:"USD/MMBtu (Iran conflict premium)", up:true },
+    { icon:"🥩", en:"Beef (FOB Aus)", zh:"牛肉（澳FOB）", price:"$7.20", change:"-40%", unit:"USD/kg (+55% tariff from Jun 20)", up:false },
+    { icon:"🌿", en:"Crude Palm Oil", zh:"毛棕榈油", price:"$985", change:"-0.5%", unit:"USD/ton (Rotterdam, Jun 2026)", up:false },
+    { icon:"🌳", en:"Rubber (TSR20)", zh:"橡胶（TSR20）", price:"$1.62", change:"+0.8%", unit:"USD/kg (SICOM, Jun 2026)", up:true },
+    { icon:"🪙", en:"Gold (XAU)", zh:"黄金", price:"$4,089", change:"+40%", unit:"USD/oz (Jun 27, 2026; YTD)", up:true },
+    { icon:"🔋", en:"Lithium Carbonate", zh:"碳酸锂", price:"$10,200", change:"-3.2%", unit:"USD/ton (CN ex-work, Jun 2026)", up:false },
+    { icon:"🍷", en:"Wine (Avg FOB)", zh:"葡萄酒（均FOB）", price:"$4.85", change:"+0.6%", unit:"USD/L (AU export avg, 2026)", up:true },
+    { icon:"☀️", en:"Solar Panel (Mono PERC)", zh:"光伏面板（单晶PERC）", price:"$0.12", change:"-5.1%", unit:"USD/W (FOB CN, Jun 2026)", up:false },
 ];
 
 // ---- Policy Data ----
