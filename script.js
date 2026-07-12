@@ -16,9 +16,9 @@ const COMMODITIES = [
         topExporters:[{en:"BHP (Australia)",zh:"必和必必拓（澳）"},{en:"Rio Tinto (Australia)",zh:"力拓（澳）"},{en:"Fortescue (Australia)",zh:"FMG（澳）"},{en:"Vale (Brazil)",zh:"淡水河谷（巴西）"}],
         topImporters:[{en:"China (72% global seaborne)",zh:"中国（72%海运进口）"},{en:"Japan",zh:"日本"},{en:"South Korea",zh:"韩国"}],
         tariff:{en:"0% (ChAFTA) — no tariff on HS 2601",zh:"0%（中澳自贸）— HS 2601无关税"},
-        yoyChange:"-5.8% (DCE futures ~¥737/t ≈ $100/t, Jul 2026; price under pressure)",
+        yoyChange:"-6.3% (SEADEX 61% AU Fines $98.25/dmt CFR Qingdao Jun 30; DCE ¥737≈$100/t; market seen softer into H2 2026)",
         trend:"stable",
-        keyEvents:{en:"DCE iron ore futures at ~¥737/t (≈$100/t) as of Jul 2, 2026. China steel demand still weak amid property sector slowdown. Port Hedland exports remain at record levels but revenue declining. China Mineral Resources Group increasing its procurement role. Geopolitical tensions (Iran conflict) providing some floor support for prices.",zh:"截至2026年6月18日，大商所铁矿石期货约¥747/吨（≈$103/吨）。中国钢铁需求因地产放缓仍然疲软。黑德兰港出口维持纪录水平但收入下降。中国矿产资源集团增强采购角色。地缘紧张（伊朗冲突）为价格提供一定底部支撑。"},
+        keyEvents:{en:"DCE iron ore futures at ~¥737/t (≈$100/t) as of Jul 2026. Mysteel SEADEX 61% AU Fines assessed $98.25/dmt CFR Qingdao (Jun 30), down $5.85 YTD. China steel demand weak amid property slowdown; Mysteel expects prices to keep falling in H2 2026. Port Hedland exports at record tonnage but revenue declining. China Mineral Resources Group expanding procurement role.",zh:"2026年7月大商所铁矿石期货约¥737/吨（≈$100/吨）。Mysteel SEADEX 61%澳粉6月30日评估价$98.25/干吨CFR青岛，年内累计下跌$5.85。中国钢铁需求因地产放缓疲软；Mysteel预计下半年价格继续下行。黑德兰港出口维持纪录吨位但收入下降。中国矿产资源集团扩大采购角色。"},
         cities:["chongqing","shanghai","guangdong","beijing"],
         cityRelevance:{
             chongqing:{en:"CQ steel mills (Chongqing Iron & Steel) import via Yangtze River",zh:"重庆钢铁经长江进口澳矿"},
@@ -79,9 +79,9 @@ const COMMODITIES = [
         topExporters:[{en:"Qatar",zh:"卡塔尔"},{en:"Australia (#2 global)",zh:"澳大利亚（全球第二）"},{en:"USA",zh:"美国"},{en:"Russia",zh:"俄罗斯"}],
         topImporters:[{en:"Japan",zh:"日本"},{en:"China",zh:"中国"},{en:"Korea",zh:"韩国"},{en:"ASEAN (Thailand, Philippines)",zh:"东盟（泰国、菲律宾）"}],
         tariff:{en:"0% (ChAFTA); ACFTA 0%",zh:"0%（中澳自贸）；ACFTA 0%"},
-        yoyChange:"+44% price (JKM $18.45/MMBtu Jun 2026, up from ~$12.8 in 2025; Iran conflict premium)",
-        trend:"up",
-        keyEvents:{en:"Asian LNG spot price surged to $18.45/MMBtu (JKM $18.25) as of Jun 2026, driven by Iran conflict disrupting Qatar supply routes. Australia #2 global LNG exporter benefiting from supply gap. Woodside (AU's largest LNG exporter) reported potential ExxonMobil acquisition interest (denied). Long-term contracts: CNOOC, PetroChina with Woodside, Santos.",zh:"截至2026年6月，亚洲LNG现货价格飙升至$18.45/MMBtu（JKM $18.25），受伊朗冲突干扰卡塔尔供应路线驱动。澳大利亚全球第二大LNG出口国从供应缺口中受益。Woodside（澳最大LNG出口商）传出埃克森美孚潜在收购意向（已否认）。长约：中海油、中石油与Woodside、Santos。"}
+        yoyChange:"+17% vs 2025 ($12.8); JKM pulled back to ~$15/MMBtu (Jul 6) from $18.45 in Jun & $25 Apr peak as Iran ceasefire reopens Strait of Hormuz",
+        trend:"down",
+        keyEvents:{en:"Asian LNG spot pulled back to ~$15/MMBtu (JKM) by Jul 6, down from $18.45 in Jun and the $25 Apr peak. Iran–US ceasefire and earlier-than-expected reopening of the Strait of Hormuz lifted Qatar+UAE exports (Kpler: +3.1Mt vs prior 2026 view). Australia #2 global LNG exporter still benefits from structural supply gap. Woodside denied ExxonMobil takeover interest. Long-term contracts: CNOOC, PetroChina with Woodside, Santos.",zh:"截至7月6日，亚洲LNG现货回落至约$15/MMBtu（JKM），较6月$18.45及4月$25高点明显回落。伊朗—美国停火及霍尔木兹海峡早于预期的重新开放推升卡塔尔+阿联酋出口（Kpler：较此前2026预期多310万吨）。澳大利亚全球第二大LNG出口国仍受益于结构性供应缺口。Woodside否认埃克森美孚收购意向。长约：中海油、中石油与Woodside、Santos。"}
         cities:["shanghai","guangdong","chongqing"],
         cityRelevance:{
             chongqing:{en:"CQ gas demand for industry; Chuanyu pipeline connections",zh:"重庆工业用气；川渝管网连接"},
@@ -163,9 +163,9 @@ const COMMODITIES = [
         topExporters:[{en:"Saudi Arabia",zh:"沙特"},{en:"Russia",zh:"俄罗斯"},{en:"Malaysia (ASEAN #1)",zh:"马来西亚（东盟第一）"},{en:"Brunei",zh:"文莱"}],
         topImporters:[{en:"China (#1 global crude importer)",zh:"中国（全球第一大原油进口国）"},{en:"Australia",zh:"澳大利亚"},{en:"ASEAN refineries",zh:"东盟炼厂"}],
         tariff:{en:"CN crude: 0% tariff; Refined: 1-6% (varies)",zh:"中国原油：0%关税；成品油：1-6%（不等）"},
-        yoyChange:"-31% (Brent ~$72/bbl Jul 2026, Iran ceasefire hopes crash prices from $104 Jun peak)",
+        yoyChange:"-31% (Brent ~$72/bbl early Jul 2026; EIA Jul 8 cut 2026 forecast to $82 from $95, WTI $76.26; 2027 to $65)",
         trend:"down",
-        keyEvents:{en:"Brent crude collapsed from $104/bbl (Jun) to ~$72/bbl (Jul 2026) as Iran ceasefire hopes eased Strait of Hormuz fears. CN July 3 fuel price cut: gasoline -¥950/t, diesel -¥915/t (biggest 2026 cut). AU 92# gasoline ~CN¥7.92/L. World Bank forecast $94/bbl avg; UBS cut to $84. OPEC+ under pressure.",zh:"Brent原油从$104/桶（6月）暴跌至~$72/桶（2026年7月），因伊朗停火希望缓解霍尔木兹海峡担忧。中国7月3日成品油调降：汽油-¥950/吨、柴油-¥915/吨（2026年最大降幅）。92#汽油约¥7.92/升。世行预测$94/桶均价；瑞银下调至$84。OPEC+面临压力。"},
+        keyEvents:{en:"Brent crude traded ~$70-74/bbl in early Jul 2026 (WTI ~$67-70), down from the $104 Jun peak as Iran ceasefire eased Strait of Hormuz fears. EIA (Jul 8) slashed its 2026 Brent forecast to $82/bbl (from $95) and 2027 to $65; WTI 2026 avg $76.26. CN July 3 fuel price cut: gasoline -¥950/t, diesel -¥915/t (biggest 2026 cut). AU 92# gasoline ~CN¥7.92/L. OPEC+ under pressure from surging non-OPEC supply.",zh:"2026年7月初Brent约$70-74/桶（WTI约$67-70），较6月$104高点回落，因伊朗停火缓解霍尔木兹海峡担忧。EIA（7月8日）将2026年Brent预测大幅下调至$82/桶（原$95），2027年降至$65；WTI 2026均价$76.26。中国7月3日成品油调降：汽油-¥950/吨、柴油-¥915/吨（2026年最大降幅）。92#汽油约¥7.92/升。OPEC+因非OPEC供应激增承压。"},
         cities:["shanghai","guangdong"],
         cityRelevance:{
             chongqing:{en:"CQ refineries (CNOOC, PetroChina) process imported crude",zh:"重庆炼厂（中海油、中石油）加工进口原油"},
@@ -520,9 +520,9 @@ const COMMODITIES = [
         topExporters:[{en:"Newmont (AU/US, #1 global gold)",zh:"纽蒙特（澳/美，全球第一黄金）"},{en:"Perth Mint (AU, refined gold)",zh:"珀斯铸币厂（澳，精炼金）"},{en:"Northern Star (AU)",zh:"北星资源（澳）"},{en:"Evolution Mining (AU)",zh:"Evolution矿业（澳）"}],
         topImporters:[{en:"China (Shanghai Gold Exchange = Asia benchmark)",zh:"中国（上海金交所=亚洲基准）"},{en:"India",zh:"印度"},{en:"Singapore",zh:"新加坡"},{en:"Switzerland",zh:"瑞士"}],
         tariff:{en:"0% (ChAFTA for gold); CN: 0% import VAT on raw gold",zh:"0%（中澳自贸黄金）；中国：原料金0%进口增值税"},
-        yoyChange:"+55% (gold price ~$4,175/oz Jul 2026, up from ~$2,700 in 2025; soft US jobs data + rate cut bets)",
+        yoyChange:"+52% YTD (gold ~$4,100/oz Jul 11, 2026, up from ~$2,700 end-2025; pulled back from $4,713 Jun peak on profit-taking)",
         trend:"up",
-        keyEvents:{en:"Gold price at ~$4,175/oz as of Jul 5, 2026 — up 55% from ~$2,700 in 2025. Hit intra-year peak of $4,713/oz in Jun 2026 then pulled back. Jun US NFP weaker than expected, reviving rate cut bets and driving recovery toward $4,200. Shanghai Gold Exchange AU9999 at ~¥880/g. Central banks continue record gold purchases. AU gold production stable ~320t/year.",zh:"截至2026年7月5日，金价约$4,175/盎司——较2025年约$2,700上涨55%。年内最高$4,713/盎司（2026年6月），后回落。6月美国非农数据低于预期，重燃降息预期，推动金价向$4,200反弹。上海金交所AU9999约¥880/克。各国央行继续创纪录购金。珀斯铸币厂=LBMA认证。澳黄金产量稳定约320吨/年。"},
+        keyEvents:{en:"Gold at ~$4,100/oz on Jul 11, 2026 (+52% YTD vs ~$2,700 end-2025), pulling back from the $4,713/oz Jun peak on profit-taking after a strong H1. China's SGE AU9999 at ~¥900/g (Jul 11). Central banks keep buying record volumes; PBOC reserves rising. AU gold output steady ~320t/yr; Perth Mint LBMA-certified. Soft US data and rate-cut bets cap downside.",zh:"2026年7月11日金价约$4,100/盎司（YTD +52%，较2025年底约$2,700；较6月$4,713高点因H1强劲后获利了结回落）。上海金交所AU9999约¥900/克（7月11日）。各国央行继续创纪录购金，央行储备上升。澳黄金产量稳定约320吨/年，珀斯铸币厂为LBMA认证。美国数据疲弱与降息预期限制下方空间。"},
         cities:["shanghai"],
         cityRelevance:{
             chongqing:{en:"CQ gold jewelry demand; limited direct import",zh:"重庆黄金首饰需求；直接进口有限"},
@@ -665,8 +665,8 @@ const CITY_PICKS = {
         },
         picks: [
             { rank:1, icon:"⛏️", en:"Iron Ore Trading", zh:"铁矿石贸易", why:{en:"Shanghai = China's iron ore pricing center (DCE futures). AU ore arrives at Yangshan. HS 2601. ChAFTA 0%.",zh:"上海=中国铁矿石定价中心（大商所期货）。澳矿抵洋山港。HS 2601。中澳自贸0%。"}, action:{en:"Trade DCE iron ore futures. Physical import via Yangshan. BHP/Rio Tinto long-term contracts. Price: ~$98/t (62% Fe).",zh:"交易大商所铁矿石期货。洋山港现货进口。必和必拓/力拓长约。价格：~$98/吨（62%品位）。"}},
-            { rank:2, icon:"🛢️", en:"LNG & Energy Trading", zh:"LNG与能源贸易", why:{en:"Shanghai Petroleum & Gas Exchange = pricing hub. AU LNG contracts growing. HS 2711.11. ChAFTA 0%.",zh:"上海石油天然气交易中心=定价中心。澳LNG合约增长。HS 2711.11。中澳自贸0%。"}, action:{en:"Long-term contracts with Woodside, Santos. Shanghai INE crude futures hedging. Price: ~$12.8/MMBtu (JKM).",zh:"与Woodside、Santos签长约。上海INE原油期货对冲。价格：~$12.8/MMBtu（JKM）。"}},
-            { rank:3, icon:"🪙", en:"Gold & Precious Metals", zh:"黄金与贵金属", why:{en:"Shanghai Gold Exchange = Asia benchmark (SHAU). AU gold #2 source for CN. HS 7108. ChAFTA 0%.",zh:"上海金交所=亚洲基准（SHAU）。澳金=中国第二来源。HS 7108。中澳自贸0%。"}, action:{en:"Trade SGE spot/futures. Import AU gold (Perth Mint). Price: ~$2,685/oz. PBOC reserve buying.",zh:"交易上金所现货/期货。进口澳金（珀斯铸币厂）。价格：~$2,685/盎司。央行储备购入。"}},
+            { rank:2, icon:"🛢️", en:"LNG & Energy Trading", zh:"LNG与能源贸易", why:{en:"Shanghai Petroleum & Gas Exchange = pricing hub. AU LNG contracts growing. HS 2711.11. ChAFTA 0%.",zh:"上海石油天然气交易中心=定价中心。澳LNG合约增长。HS 2711.11。中澳自贸0%。"}, action:{en:"Long-term contracts with Woodside, Santos. Shanghai INE crude futures hedging. Price: ~$15/MMBtu (JKM, Jul 6, down from $18.45 Jun).",zh:"与Woodside、Santos签长约。上海INE原油期货对冲。价格：~$15/MMBtu（JKM，7月6日，较6月$18.45回落）。"}},
+            { rank:3, icon:"🪙", en:"Gold & Precious Metals", zh:"黄金与贵金属", why:{en:"Shanghai Gold Exchange = Asia benchmark (SHAU). AU gold #2 source for CN. HS 7108. ChAFTA 0%.",zh:"上海金交所=亚洲基准（SHAU）。澳金=中国第二来源。HS 7108。中澳自贸0%。"}, action:{en:"Trade SGE spot/futures. Import AU gold (Perth Mint). Price: ~$4,100/oz (Jul 11). PBOC reserve buying.",zh:"交易上金所现货/期货。进口澳金（珀斯铸币厂）。价格：~$4,100/盎司（7月11日）。央行储备购入。"}},
             { rank:4, icon:"🥩", en:"Premium Food & Beverage", zh:"高端食品饮料", why:{en:"Shanghai consumers pay premium for AU beef, wine, dairy, seafood. HS 0201-0202, 2204, 0402. ChAFTA 0%.",zh:"上海消费者愿为澳牛排、红酒、乳品、海鲜付溢价。HS 0201-0202, 2204, 0402。中澳自贸0%。"}, action:{en:"Import AU wagyu, Barossa wine, King Island dairy, rock lobster. FTZ warehousing. Penfolds, Blackmores distribution.",zh:"进口澳和牛、巴罗萨红酒、国王岛乳品、岩龙虾。自贸区仓储。奔富、Blackmores分销。"}},
             { rank:5, icon:"💰", en:"Financial & Fintech Services", zh:"金融与金融科技", why:{en:"Shanghai = China's Wall St. RMB clearing hub. AU-ASEAN-CN trade finance. RCEP financial services chapter.",zh:"上海=中国华尔街。人民币清算枢纽。澳-东盟-中贸易融资。RCEP金融服务章节。"}, action:{en:"Provide trade finance, FX hedging, cross-border RMB settlement. ANZ, HSBC Shanghai operations. RMB 50T+ settlement.",zh:"提供贸易融资、汇率对冲、跨境人民币结算。澳新、汇丰上海运营。人民币50万亿+结算。"}},
             { rank:6, icon:"🔌", en:"Electronics Components", zh:"电子元器件", why:{en:"Shanghai = semiconductor assembly hub (SMIC, Huali). ASEAN demand for chips. HS 8542. RCEP 0%.",zh:"上海=半导体封装中心（中芯国际、华力）。东盟芯片需求。HS 8542。RCEP 0%。"}, action:{en:"Export semiconductors to Vietnam/Malaysia assembly. RCEP rules of origin (cumulative value content). CN chip exports $200B+.",zh:"出口半导体至越南/马来西亚组装。RCEP原产地规则（累积价值成分）。中国芯片出口2000亿美元+。"}},
@@ -708,26 +708,26 @@ const CITY_PICKS = {
 
 // ---- Key Events Feed ----
 const KEY_EVENTS = [
-    { date:"Jul 5, 2026", icon:"🪙", en:"Gold recovers to ~$4,175/oz — weak US June NFP data revives rate cut bets, driving rebound. Central banks continue record purchases.", zh:"金价恢复至~$4,175/盎司——美国6月非农数据疲软重燃降息预期，推动反弹。各国央行继续创纪录购金。", trend:"up" },
-    { date:"Jul 2026", icon:"🛢️", en:"Brent crude plunges to ~$72/bbl — Iran ceasefire hopes crash prices from $104 Jun peak. China July fuel price cut: -¥950/t gasoline, biggest 2026 reduction.", zh:"Brent原油暴跌至~$72/桶——伊朗停火希望使价格从6月高点$104回落。中国7月成品油调降：汽油-¥950/吨，2026年最大降幅。", trend:"down" },
-    { date:"Jun 2026", icon:"🛢️", en:"LNG JKM at $18.45/MMBtu — Iran conflict disrupting Qatar supply routes. AU exports benefiting from supply gap.", zh:"LNG JKM报$18.45/MMBtu——伊朗冲突干扰卡塔尔供应路线。澳出口从供应缺口受益。", trend:"up" },
+    { date:"Jul 11, 2026", icon:"🪙", en:"Gold eases to ~$4,100/oz (+52% YTD vs ~$2,700 end-2025), pulling back from the $4,713 Jun peak on profit-taking. China SGE AU9999 ~¥900/g. Central banks still buying record volumes.", zh:"金价回落至~$4,100/盎司（YTD +52%，较2025年底约$2,700），自6月$4,713高点因获利了结回调。中国上金所AU9999约¥900/克。央行仍创纪录购金。", trend:"down" },
+    { date:"Jul 8, 2026", icon:"🛢️", en:"EIA slashes 2026 Brent forecast to $82/bbl (from $95); WTI $76.26, 2027 Brent to $65. Spot Brent ~$70-74 early Jul after Iran ceasefire; China July fuel cut -¥950/t gasoline.", zh:"EIA将2026年Brent预测大幅下调至$82/桶（原$95）；WTI $76.26，2027年Brent降至$65。伊朗停火后现货Brent 7月初约$70-74；中国7月成品油调降汽油-¥950/吨。", trend:"down" },
+    { date:"Jul 6, 2026", icon:"🛢️", en:"LNG JKM pulls back to ~$15/MMBtu — down from $18.45 in Jun and the $25 Apr peak as Iran ceasefire reopens Strait of Hormuz; Qatar+UAE exports recovering (Kpler +3.1Mt).", zh:"LNG JKM回落至约$15/MMBtu——较6月$18.45及4月$25高点回落，因伊朗停火重开霍尔木兹海峡；卡塔尔+阿联酋出口恢复（Kpler +310万吨）。", trend:"down" },
     { date:"Jun 18, 2026", icon:"🥩", en:"⚠️ AU beef quota (20.5Kt) exhausted — 100% filled by Jun 18, only 6 months into the year. +55% tariff effective Jun 20.", zh:"⚠️ 澳牛肉配额（20.5Kt）用尽——6月18日达到100%，仅半年用完。6月20日起加征55%关税。", trend:"down" },
     { date:"Jan-May 2026", icon:"🌏", en:"China-ASEAN trade +16.6% YoY (RMB 3.52T) — ASEAN remains CN's largest trading partner. Vietnam, Malaysia, Indonesia top 3.", zh:"中国-东盟贸易+16.6% YoY（3.52万亿元）——东盟保持中国最大贸易伙伴。越南、马来西亚、印尼前三。", trend:"up" },
     { date:"Q1 2026", icon:"🇦🇺", en:"AU posts first current account deficit since 2017 — A$27.1B deficit. First trade deficit in 8+ years (A$1.84B in Mar 2026).", zh:"澳出现2017年以来首次经常账户赤字——271亿澳元。8年来首次贸易逆差（2026年3月18.4亿澳元）。", trend:"down" },
-    { date:"2026", icon:"🚗", en:"China vehicle exports: Jan-May 405.9万 units (+63% YoY). Full-year 2026 forecast: 10M+ vehicles (+70%).", zh:"中国汽车出口：前5月405.9万辆（+63% YoY）。2026全年预计：1000万辆+（+70%）。", trend:"up" },
+    { date:"2026", icon:"🚗", en:"China vehicle exports: Jan-May 405.9万 units (+63% YoY); May NEV share hit record 54% of total exports. Full-year 2026 forecast: 10M+ vehicles (+70%).", zh:"中国汽车出口：前5月405.9万辆（+63% YoY）；5月新能源车占比创纪录达54%。2026全年预计：1000万辆+（+70%）。", trend:"up" },
     { date:"2026", icon:"☀️", en:"Solar panel prices crashed to $0.10-0.12/W — CN overcapacity driving global prices down 50%+ in 3 years.", zh:"光伏面板价格跌至$0.10-0.12/瓦——中国产能过剩推动全球价格3年内下降50%+。", trend:"down" },
     { date:"Jul 2026", icon:"⛏️", en:"DCE iron ore dips to ~¥737/t ($100/t) — steel demand remains weak. Property sector slowdown plus hot weather curbing construction activity.", zh:"大商所铁矿石降至~¥737/吨（$100/吨）——钢铁需求仍疲软。地产行业放缓叠加高温天气抑制施工活动。", trend:"stable" },
 ];
 
 // ---- Price Data ----
 const PRICES = [
-    { icon:"⛏️", en:"Iron Ore (62% Fe)", zh:"铁矿石（62%品位）", price:"$100", change:"-5.8%", unit:"USD/ton (DCE ¥737, Jul 2026)", up:false },
+    { icon:"⛏️", en:"Iron Ore (62% Fe)", zh:"铁矿石（62%品位）", price:"$98", change:"-6.3%", unit:"USD/ton (SEADEX $98.25 CFR Qingdao, Jun 30)", up:false },
     { icon:"🔥", en:"Thermal Coal (Newcastle)", zh:"动力煤（纽卡斯尔）", price:"$128", change:"-1.1%", unit:"USD/ton FOB (Jun 2026)", up:false },
-    { icon:"🛢️", en:"LNG (JKM)", zh:"液化天然气（JKM）", price:"$18.45", change:"+44%", unit:"USD/MMBtu (Iran conflict premium)", up:true },
+    { icon:"🛢️", en:"LNG (JKM)", zh:"液化天然气（JKM）", price:"$15.00", change:"-19%", unit:"USD/MMBtu (Jul 6, Iran ceasefire; was $25 Apr peak)", up:false },
     { icon:"🥩", en:"Beef (FOB Aus)", zh:"牛肉（澳FOB）", price:"$7.20", change:"-40%", unit:"USD/kg (+55% tariff from Jun 20)", up:false },
     { icon:"🌿", en:"Crude Palm Oil", zh:"毛棕榈油", price:"$985", change:"-0.5%", unit:"USD/ton (Rotterdam, Jun 2026)", up:false },
     { icon:"🌳", en:"Rubber (TSR20)", zh:"橡胶（TSR20）", price:"$1.62", change:"+0.8%", unit:"USD/kg (SICOM, Jun 2026)", up:true },
-    { icon:"🪙", en:"Gold (XAU)", zh:"黄金", price:"$4,175", change:"+55%", unit:"USD/oz (Jul 5, 2026; YTD)", up:true },
+    { icon:"🪙", en:"Gold (XAU)", zh:"黄金", price:"$4,101", change:"+52%", unit:"USD/oz (Jul 11, 2026; YTD)", up:true },
     { icon:"🔋", en:"Lithium Carbonate", zh:"碳酸锂", price:"$10,200", change:"-3.2%", unit:"USD/ton (CN ex-work, Jun 2026)", up:false },
     { icon:"🍷", en:"Wine (Avg FOB)", zh:"葡萄酒（均FOB）", price:"$4.85", change:"+0.6%", unit:"USD/L (AU export avg, 2026)", up:true },
     { icon:"☀️", en:"Solar Panel (Mono PERC)", zh:"光伏面板（单晶PERC）", price:"$0.12", change:"-5.1%", unit:"USD/W (FOB CN, Jun 2026)", up:false },
