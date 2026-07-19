@@ -708,7 +708,7 @@ const CITY_PICKS = {
 
 // ---- Key Events Feed ----
 const KEY_EVENTS = [
-    { date:"Jul 11, 2026", icon:"🪙", en:"Gold eases to ~$4,100/oz (+52% YTD vs ~$2,700 end-2025), pulling back from the $4,713 Jun peak on profit-taking. China SGE AU9999 ~¥900/g. Central banks still buying record volumes.", zh:"金价回落至~$4,100/盎司（YTD +52%，较2025年底约$2,700），自6月$4,713高点因获利了结回调。中国上金所AU9999约¥900/克。央行仍创纪录购金。", trend:"down" },
+    { date:"Jul 18, 2026", icon:"🪙", en:"Gold eases to ~$4,016/oz (+48% YTD vs ~$2,700 end-2025), ranging $3,968-4,123 mid-Jul after the $4,713 Jun peak. China SGE AU9999 ~¥877/g (Jul 18). Central banks keep buying; PBOC reserves rising. Domestic retail gold ~¥1,044-1,215/brand.", zh:"金价回落至约$4,016/盎司（YTD +48%，较2025年底约$2,700），7月中在$3,968-4,123区间震荡，6月$4,713高点后持续回调。中国上金所AU9999约¥877/克（7月18日）。央行持续创纪录购金，央行储备上升。国内品牌金饰约¥1,044-1,215/克。", trend:"down" },
     { date:"Jul 8, 2026", icon:"🛢️", en:"EIA slashes 2026 Brent forecast to $82/bbl (from $95); WTI $76.26, 2027 Brent to $65. Spot Brent ~$70-74 early Jul after Iran ceasefire; China July fuel cut -¥950/t gasoline.", zh:"EIA将2026年Brent预测大幅下调至$82/桶（原$95）；WTI $76.26，2027年Brent降至$65。伊朗停火后现货Brent 7月初约$70-74；中国7月成品油调降汽油-¥950/吨。", trend:"down" },
     { date:"Jul 6, 2026", icon:"🛢️", en:"LNG JKM pulls back to ~$15/MMBtu — down from $18.45 in Jun and the $25 Apr peak as Iran ceasefire reopens Strait of Hormuz; Qatar+UAE exports recovering (Kpler +3.1Mt).", zh:"LNG JKM回落至约$15/MMBtu——较6月$18.45及4月$25高点回落，因伊朗停火重开霍尔木兹海峡；卡塔尔+阿联酋出口恢复（Kpler +310万吨）。", trend:"down" },
     { date:"Jun 18, 2026", icon:"🥩", en:"⚠️ AU beef quota (20.5Kt) exhausted — 100% filled by Jun 18, only 6 months into the year. +55% tariff effective Jun 20.", zh:"⚠️ 澳牛肉配额（20.5Kt）用尽——6月18日达到100%，仅半年用完。6月20日起加征55%关税。", trend:"down" },
@@ -716,7 +716,10 @@ const KEY_EVENTS = [
     { date:"Q1 2026", icon:"🇦🇺", en:"AU posts first current account deficit since 2017 — A$27.1B deficit. First trade deficit in 8+ years (A$1.84B in Mar 2026).", zh:"澳出现2017年以来首次经常账户赤字——271亿澳元。8年来首次贸易逆差（2026年3月18.4亿澳元）。", trend:"down" },
     { date:"2026", icon:"🚗", en:"China vehicle exports: Jan-May 405.9万 units (+63% YoY); May NEV share hit record 54% of total exports. Full-year 2026 forecast: 10M+ vehicles (+70%).", zh:"中国汽车出口：前5月405.9万辆（+63% YoY）；5月新能源车占比创纪录达54%。2026全年预计：1000万辆+（+70%）。", trend:"up" },
     { date:"2026", icon:"☀️", en:"Solar panel prices crashed to $0.10-0.12/W — CN overcapacity driving global prices down 50%+ in 3 years.", zh:"光伏面板价格跌至$0.10-0.12/瓦——中国产能过剩推动全球价格3年内下降50%+。", trend:"down" },
-    { date:"Jul 2026", icon:"⛏️", en:"DCE iron ore dips to ~¥737/t ($100/t) — steel demand remains weak. Property sector slowdown plus hot weather curbing construction activity.", zh:"大商所铁矿石降至~¥737/吨（$100/吨）——钢铁需求仍疲软。地产行业放缓叠加高温天气抑制施工活动。", trend:"stable" },
+    { date:"Jul 2026", icon:"⛏️", en:"DCE iron ore at ~¥737/t ($100/t). Steel demand remains weak — property slowdown, hot summer curbing construction. Port Hedland exports at record tonnage but revenue declining. China steel PMI below 50 for third month. H2 2026 price outlook soft per Mysteel.", zh:"大商所铁矿石约¥737/吨（$100/吨）。钢铁需求疲软——地产放缓、夏季高温抑制施工。黑德兰港出口维持纪录但收入下降。中国钢铁PMI连续第三月低于50。Mysteel预计下半年价格持续承压。", trend:"stable" },
+    { date:"Jul 2, 2026", icon:"💰", en:"Bank of China Sydney hosted 'RMB Internationalization' roadshow — 150+ CN-AU business leaders. RMB settlement in ASEAN now 10%+ of trade. Cross-border RMB corridor Sydney-Shanghai strengthening.", zh:"中国银行悉尼分行主办'人民币国际化'路演——150余名中澳工商界领袖参与。东盟人民币结算占比已超10%。悉尼-上海跨境人民币通道持续强化。", trend:"up" },
+    { date:"Jul 16, 2026", icon:"⛏️", en:"BHP warns of lower 2027 copper output — work stoppages and ore-grade decline. BHP remains confident in group growth. Copper cut may pressure Australian export revenue.", zh:"必和必拓警告2027年铜产量将下降——因罢工及矿石品位下降。必和必拓仍对集团增长抱有信心。铜产量削减或影响澳出口收入。", trend:"down" },
+    { date:"2026", icon:"🌏", en:"Australia: Country of Honour at China Intl Supply Chain Expo (CISCE 2026, Nov Beijing) — major AU trade promotion. AusTrade Hub boosting CN-AU supply chain cooperation visibility.", zh:"澳大利亚担任中国国际供应链博览会（CISCE 2026，11月北京）主宾国——重大贸易推广活动。澳通商汇助力中澳供应链合作展示。", trend:"up" },
 ];
 
 // ---- Price Data ----
@@ -727,7 +730,7 @@ const PRICES = [
     { icon:"🥩", en:"Beef (FOB Aus)", zh:"牛肉（澳FOB）", price:"$7.20", change:"-40%", unit:"USD/kg (+55% tariff from Jun 20)", up:false },
     { icon:"🌿", en:"Crude Palm Oil", zh:"毛棕榈油", price:"$985", change:"-0.5%", unit:"USD/ton (Rotterdam, Jun 2026)", up:false },
     { icon:"🌳", en:"Rubber (TSR20)", zh:"橡胶（TSR20）", price:"$1.62", change:"+0.8%", unit:"USD/kg (SICOM, Jun 2026)", up:true },
-    { icon:"🪙", en:"Gold (XAU)", zh:"黄金", price:"$4,101", change:"+52%", unit:"USD/oz (Jul 11, 2026; YTD)", up:true },
+    { icon:"🪙", en:"Gold (XAU)", zh:"黄金", price:"$4,016", change:"+48%", unit:"USD/oz (Jul 18, 2026; YTD from ~$2,700 end-2025)", up:true },
     { icon:"🔋", en:"Lithium Carbonate", zh:"碳酸锂", price:"$10,200", change:"-3.2%", unit:"USD/ton (CN ex-work, Jun 2026)", up:false },
     { icon:"🍷", en:"Wine (Avg FOB)", zh:"葡萄酒（均FOB）", price:"$4.85", change:"+0.6%", unit:"USD/L (AU export avg, 2026)", up:true },
     { icon:"☀️", en:"Solar Panel (Mono PERC)", zh:"光伏面板（单晶PERC）", price:"$0.12", change:"-5.1%", unit:"USD/W (FOB CN, Jun 2026)", up:false },
